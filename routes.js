@@ -8,3 +8,5 @@ router.get("/", home.index);
 router.get("/about", about.index);
 
 module.exports = router;
+const dashboard = require("./controllers/dashboard.js");
+router.get("/dashboard", dashboard.index);
